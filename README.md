@@ -1,7 +1,7 @@
 # ros_raspi_motor_control
 SG90 controller for ros noetic on raspberrypi
 ---
-2020年ロボットシステム学 課題2の為に作成したリポジトリです。
+2020年ロボットシステム学 課題2の為に作成したパッケージです。
 <br>
 サーボモータ(SG90)を任意の角度に動かす事が可能なノードを提供します。課題の都合上publisherノードも含まれていますが、モータを動かすという用途に関してはこのパッケージのsubscriberノードとメッセージを他のパッケージ等から利用して頂く事が可能です。
 
@@ -74,7 +74,7 @@ $ roslaunch ros_raspi_motor_control motor_move.launch
 $ rosrun ros_raspi_motor_control motor_sub.py
 ```
 
-msgフォルダにて定義されているraspi_servo.msgではpinNumberでSG90のオレンジの信号線に接続されているraspi 3b+のGPIOピン番号を、degreeで目標角度を指定します。topicはRASPI_MOTOR/move_servoです。
+msgフォルダにて定義されているraspi_servo.msgではpinNumberでSG90のオレンジの信号線に接続されているraspi 3b+のGPIOピン番号を、degreeで目標角度を指定します。角度は-90°～+90°の範囲で動かす事が可能です。topicはRASPI_MOTOR/move_servoです。
 
 ---
 ## ライセンス
