@@ -25,13 +25,9 @@ def listener():
 if __name__ == '__main__':
     GPIO.setmode(GPIO.BCM)
     motor_pin_pwm = 12 
-    motor_pin_vcc = 16
     GPIO.setup(motor_pin_pwm, GPIO.OUT)
-    GPIO.setup(motor_pin_vcc, GPIO.OUT)
     servo = GPIO.PWM(motor_pin_pwm, 50)
-    GPIO.output(motor_pin_vcc, GPIO.HIGH)
     servo.start(0)
-
 
     listener()
 
