@@ -10,6 +10,7 @@ SG90 controller for ros noetic on raspberrypi
 
 ### OS : ubuntu 20.04 server
 ### ROS distribution : Noetic Ninjemys
+### RPi.GPIO ver0.7.0
 
 ---
 ## 使用したもの
@@ -54,8 +55,13 @@ $ git clone https://github.com/AD58-3104/ros_raspi_motor_control.git
 $ cd ..
 $ catkin_make
 ```
+RPi.GPIOがインストール済みで無い場合、下記コマンドのどちらか若しくは以下のサイト内wiki等を参考にインストールして下さい。
 
-
+```sh
+$ pip3 install rpi.gpio
+$ sudo apt-get install python3-rpi.gpio
+```
+https://sourceforge.net/projects/raspberry-gpio-python/
 ---
 ## 使用方法
 上記の方法でcatkin_makeまで終わったのち
