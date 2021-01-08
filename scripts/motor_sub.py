@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/env python3
 import RPi.GPIO as GPIO
 import time
 import rospy
@@ -24,8 +24,8 @@ def listener():
         
 if __name__ == '__main__':
     GPIO.setmode(GPIO.BCM)
-    motor_pin_pwm = 12 #12
-    motor_pin_vcc = 17 #23
+    motor_pin_pwm = 12 
+    motor_pin_vcc = 16
     GPIO.setup(motor_pin_pwm, GPIO.OUT)
     GPIO.setup(motor_pin_vcc, GPIO.OUT)
     servo = GPIO.PWM(motor_pin_pwm, 50)
