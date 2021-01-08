@@ -28,6 +28,10 @@ if __name__ == '__main__':
     GPIO.setup(motor_pin_pwm, GPIO.OUT)
     servo = GPIO.PWM(motor_pin_pwm, 50)
     servo.start(0)
+    duty_cycle =(2.5 + (( 12.0 - 2.5 ) / 180.0) * ( 0 + 90.0 ))
+    servo.ChangeDutyCycle(duty_cycle)
+    time.sleep(1)
+    servo.ChangeDutyCycle(0.0)
 
     listener()
 
