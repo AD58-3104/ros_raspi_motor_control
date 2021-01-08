@@ -81,7 +81,7 @@ $ roslaunch ros_raspi_motor_control motor_move.launch
 $ rosrun ros_raspi_motor_control motor_sub.py
 ```
 
-msgフォルダにて定義されているraspi_servo.msgではpinNumberでSG90のオレンジの信号線に接続されているraspi 3b+のGPIOピン番号を、degreeで目標角度を指定します。角度は-90°～+90°の範囲で動かす事が可能です。topicはRASPI_MOTOR/move_servoです。
+msgフォルダにて定義されているraspi_servo.msgではpinNumberでSG90のオレンジの信号線に接続されているraspi 3b+のピンのBCMピン番号を、degreeで目標角度を指定します。角度は-90°～+90°の範囲で動かす事が可能です。topicはRASPI_MOTOR/move_servoです。
 
 ---
 ## ライセンス
