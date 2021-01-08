@@ -85,4 +85,4 @@ msgフォルダにて定義されているraspi_servo.msgではpinNumberでSG90�
 
 ---
 ## ライセンス
-[BSD 3-Clause "New" or "Revised" License](https://github.com/AD58-3104/ros_raspi_motor_control/blob/main/COPYING)
+[BSD 3-Clause "New" or "Revised" License](https://github.com/AD58-3104/ros_raspi_motor_control/blob/main/LICENSE)
