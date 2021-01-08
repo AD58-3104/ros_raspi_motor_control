@@ -39,7 +39,7 @@ SG90 controller for ros noetic on raspberrypi
 
 ---
 ## デモ動画
-
+https://www.youtube.com/watch?v=tgQEQut9-lM
 
 ### サーボが初期位置(0°)に戻った後、40°から-40°まで繰り返し動きます。
 
