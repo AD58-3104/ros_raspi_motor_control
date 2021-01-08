@@ -1,0 +1,2 @@
+int32 pinNumber
+float32 degree
