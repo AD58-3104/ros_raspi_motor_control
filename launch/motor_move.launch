@@ -1,0 +1,4 @@
+<launch>
+    <node pkg="ros_raspi_motor_control" name="RASPI_MOTOR" type="pub_motor"/>
+    <node pkg="ros_raspi_motor_control" name="motor_sub" type="motor_sub.py"/>
+</launch>
